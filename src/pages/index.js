@@ -3,9 +3,9 @@ import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import Footer from '../components/Footer';
+import Externallink from '../components/Externallink';
 import pic1 from '../images/pic01.jpg';
 import pic2 from '../images/pic02.jpg';
-import pic3 from '../images/pic03.jpg';
 import Sidebar from '../components/Sidebar';
 import Scroll from '../components/Scroll';
 
@@ -16,19 +16,24 @@ const IndexPage = () => (
     <div id="wrapper">
       <section id="intro" className="wrapper style1 fullscreen fade-up">
         <div className="inner">
-          <h1>Hyperspace</h1>
+          <h1>Tevin Thuku</h1>
           <p>
-            Just another fine responsive site template designed by{' '}
-            <a href="http://html5up.net">HTML5 UP</a>
+            Im a Software engineer
             <br />
-            and released for free under the{' '}
-            <a href="http://html5up.net/license">Creative Commons</a>.
+            Previously working for{' '}
+            <Externallink text="Andela" link="https://andela.com/" />
+            <br />
+            Checkout{' '}
+            <Externallink
+              link="https://github.com/Tevinthuku"
+              text="My Github Profile"
+            />
           </p>
           <ul className="actions">
             <li>
               <Scroll type="id" element="one">
                 <a href="#one" className="button">
-                  Learn more
+                  Learn more about me
                 </a>
               </Scroll>
             </li>
@@ -43,15 +48,16 @@ const IndexPage = () => (
           </a>
           <div className="content">
             <div className="inner">
-              <h2>Sed ipsum dolor</h2>
+              <h2>I am Passionate about front-end development</h2>
               <p>
-                Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-                turpis mauris, eu ultricies erat malesuada quis. Aliquam
-                dapibus.
+                I love Reactjs and modern Js tooling that enable developers to
+                create wonderful user experiences for clients and also
+                contributing to creating and contributing to open source tools
+                that work with these technologies
               </p>
               <ul className="actions">
                 <li>
-                  <Link className="button" to="/generic">
+                  <Link className="button" to="/react/">
                     Learn more
                   </Link>
                 </li>
@@ -65,37 +71,14 @@ const IndexPage = () => (
           </a>
           <div className="content">
             <div className="inner">
-              <h2>Feugiat consequat</h2>
+              <h2>I'm good at Backend API development</h2>
               <p>
-                Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-                turpis mauris, eu ultricies erat malesuada quis. Aliquam
-                dapibus.
+                I love building backend services and I have experience working
+                on building API's with Python, Node and Elixir
               </p>
               <ul className="actions">
                 <li>
-                  <Link className="button" to="/generic">
-                    Learn more
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section>
-          <a href="/#" className="image">
-            <img src={pic3} alt="" data-position="25% 25%" />
-          </a>
-          <div className="content">
-            <div className="inner">
-              <h2>Ultricies aliquam</h2>
-              <p>
-                Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-                turpis mauris, eu ultricies erat malesuada quis. Aliquam
-                dapibus.
-              </p>
-              <ul className="actions">
-                <li>
-                  <Link className="button" to="/generic">
+                  <Link className="button" to="/backend">
                     Learn more
                   </Link>
                 </li>
@@ -107,153 +90,190 @@ const IndexPage = () => (
 
       <section id="two" className="wrapper style3 fade-up">
         <div className="inner">
-          <h2>What we do</h2>
+          <h2>My best Work</h2>
           <p>
-            Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-            turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus,
-            lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
-            imperdiet est velit quis lorem.
+            I love building things, both big and small and here is a small list
+            of my best work to date.
           </p>
           <div className="features">
             <section>
               <span className="icon major fa-code" />
-              <h3>Lorem ipsum amet</h3>
+              <h3>Artispace platform</h3>
               <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
+                Its a wix clone, and it empowers users to create powerful a
+                unique space for themselves that is highly customizeable and
+                that can reflect what their brand stands for. Built in
+                <br />
+                1. React <br />
+                2. NextJs <br />
+                3. Firebase <br />
+                4. Websockets <br /> <br />
+                <br /> <br />
+                <Externallink
+                  link="https://artispaceweb.now.sh/"
+                  text="Artispace"
+                />
+              </p>
+              <br />
+            </section>
+            <section>
+              <span className="icon major fa-code" />
+              <h3>Politico</h3>
+              <p>
+                An online platform that enables users to vote for their desired
+                leaders Built in
+                <br />
+                1. Python <br />
+                2. Postgres <br />
+                3. Flask <br />
+                4. Deployed on Heroku
+                <br />
+                <br />
+                <br />
+                <Externallink
+                  link="https://github.com/Tevinthuku/Politico"
+                  text="Link to Github Repository"
+                />
               </p>
             </section>
             <section>
-              <span className="icon major fa-lock" />
-              <h3>Aliquam sed nullam</h3>
+              <span className="icon major fa-code" />
+              <h3>Localstorage Redux</h3>
               <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
+                An open source library that enables users to store their redux
+                developers state to the browser's Localstorage
+                <br />
+                Built with:
+                <br />
+                1. Redux <br />
+                2. Javascript
+                <br />
+                <br />
+                <Externallink
+                  link="https://www.npmjs.com/package/localstorage-redux"
+                  text="Link to project"
+                />
               </p>
             </section>
             <section>
-              <span className="icon major fa-cog" />
-              <h3>Sed erat ullam corper</h3>
+              <span className="icon major fa-code" />
+              <h3>useForm</h3>
               <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
+                This is a react frontend library built by React Hooks that makes
+                forms much more reuseable
+                <br />
+                Built with:
+                <br />
+                1. React hooks <br />
+                2. Javascript <br />
+                <br />
+                <Externallink
+                  link="https://www.npmjs.com/package/@tevhooks/useform"
+                  text="useForm package link"
+                />
               </p>
             </section>
             <section>
-              <span className="icon major fa-desktop" />
-              <h3>Veroeros quis lorem</h3>
+              <span className="icon major fa-code" />
+              <h3>Authors Haven</h3>
               <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
+                A medium clone that enables users to create articles and comment
+                on articles. We worked on this as a team of 6 devs written Built
+                in
+                <br />
+                1. Python <br />
+                2. Postgres <br />
+                3. Django <br />
+                4. Deployed on Heroku <br />
+                <br />
+                <Externallink
+                  link="https://github.com/rfpremier/ah-django"
+                  text="Authors Haven API"
+                />
               </p>
             </section>
             <section>
-              <span className="icon major fa-chain" />
-              <h3>Urna quis bibendum</h3>
+              <span className="icon major fa-code" />
+              <h3>Blog explaining the internals of react.</h3>
               <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
-              </p>
-            </section>
-            <section>
-              <span className="icon major fa-diamond" />
-              <h3>Aliquam urna dapibus</h3>
-              <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
+                An article and package that enables devs to get an understanding
+                the internals of React and also understand why some patterns can
+                help improve your applications performance an
+                <br />
+                <br />
+                <Externallink
+                  link="https://andela.com/insights/building-your-own-version-of-react-from-scratch-part-1/"
+                  text="First part of the post"
+                />
+                <br />
+                <br />
+                <Externallink
+                  link="https://andela.com/insights/building-your-own-react-from-scratch-part-2/"
+                  text="Second part of the post"
+                />
+                <br />
+                <br />
+                <Externallink
+                  link="https://www.npmjs.com/package/tevreact"
+                  text="Link to package"
+                />
               </p>
             </section>
           </div>
-          <ul className="actions">
-            <li>
-              <Link className="button" to="/generic">
-                Learn more
-              </Link>
-            </li>
-          </ul>
         </div>
       </section>
 
       <section id="three" className="wrapper style1 fade-up">
         <div className="inner">
           <h2>Get in touch</h2>
-          <p>
-            Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-            turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus,
-            lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
-            imperdiet est velit quis lorem.
-          </p>
           <div className="split style1">
-            <section>
-              <form method="post" action="#">
-                <div className="fields">
-                  <div className="field half">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" />
-                  </div>
-                  <div className="field half">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email" />
-                  </div>
-                  <div className="field">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="5" />
-                  </div>
-                </div>
-                <ul className="actions">
-                  <li>
-                    <a href="/#" className="button submit">
-                      Send Message
-                    </a>
-                  </li>
-                </ul>
-              </form>
-            </section>
             <section>
               <ul className="contact">
                 <li>
                   <h3>Address</h3>
                   <span>
-                    12345 Somewhere Road #654
+                    Roysambu
                     <br />
-                    Nashville, TN 00000-0000
+                    Nairobi
                     <br />
-                    USA
+                    KENYA
                   </span>
                 </li>
                 <li>
                   <h3>Email</h3>
-                  <a href="/#">user@untitled.tld</a>
+                  <Externallink
+                    link="mailto:tevinthuku@gmail.com"
+                    text="tevinthuku@gmail.com"
+                  />
                 </li>
                 <li>
                   <h3>Phone</h3>
-                  <span>(000) 000-0000</span>
+                  <span>(254) 742-546892</span>
                 </li>
                 <li>
                   <h3>Social</h3>
                   <ul className="icons">
                     <li>
-                      <a href="/#" className="fa-twitter">
+                      <a
+                        href="https://twitter.com/tevinthuku"
+                        className="fa-twitter"
+                      >
                         <span className="label">Twitter</span>
                       </a>
                     </li>
                     <li>
-                      <a href="/#" className="fa-facebook">
-                        <span className="label">Facebook</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/#" className="fa-github">
+                      <a
+                        href="https://github.com/Tevinthuku"
+                        className="fa-github"
+                      >
                         <span className="label">GitHub</span>
                       </a>
                     </li>
                     <li>
-                      <a href="/#" className="fa-instagram">
-                        <span className="label">Instagram</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/#" className="fa-linkedin">
+                      <a
+                        href="https://www.linkedin.com/in/tevin-thuku-a27a05a5/"
+                        className="fa-linkedin"
+                      >
                         <span className="label">LinkedIn</span>
                       </a>
                     </li>
