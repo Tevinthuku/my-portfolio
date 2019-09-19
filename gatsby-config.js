@@ -1,16 +1,16 @@
 module.exports = {
-  pathPrefix: `/gatsby-starter-hyperspace/`, // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: `/my-portfolio/`, // This path is subpath of your hosting https://domain/portfolio
   siteMetadata: {
-    title: 'Gatsby Starter Hyperspace',
+    title: `Tev's portfolio`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Hyperspace',
-        short_name: 'starter',
-        start_url: '/',
+        name: 'Tevin Thuku',
+        short_name: 'Tev',
+        start_url: '/my-portfolio',
         background_color: '#663399',
         theme_color: '#663399',
         display: 'standalone',

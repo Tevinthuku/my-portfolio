@@ -20,10 +20,10 @@ const IndexPage = () => (
           <p>
             Im a Software engineer
             <br />
-            Previously working for{' '}
+            {' '}Previously working for <br />
             <Externallink text="Andela" link="https://andela.com/" />
             <br />
-            Checkout{' '}
+            {' '}Checkout <br />
             <Externallink
               link="https://github.com/Tevinthuku"
               text="My Github Profile"
@@ -43,7 +43,7 @@ const IndexPage = () => (
 
       <section id="one" className="wrapper style2 spotlights">
         <section>
-          <a href="/#" className="image" alt="image">
+          <a href="/react/" className="image" alt="image">
             <img src={pic1} alt="" data-position="center center" />
           </a>
           <div className="content">
@@ -66,7 +66,7 @@ const IndexPage = () => (
           </div>
         </section>
         <section>
-          <a href="/#" className="image">
+          <a href="/backend/" className="image">
             <img src={pic2} alt="" data-position="top center" />
           </a>
           <div className="content">
