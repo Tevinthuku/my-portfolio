@@ -26,27 +26,23 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-9555e1c692766a188ea5.js"
+    "url": "webpack-runtime-a89679ad180d0d05d579.js"
   },
   {
-    "url": "commons.1328d2e67004fede937c.css"
+    "url": "commons.bbcbdf8472d5633a2222.css"
   },
   {
     "url": "commons-730bc7753e1b2a238972.js"
   },
   {
-    "url": "app-9f2dfa616fdb1343d384.js"
+    "url": "app-9a135864a8bf23328c35.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-8379b64685b8d9a53ce8.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "3f3369575fdf26b1e08f8579d96884a9"
-  },
-  {
-    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "a0bac7c4e019cdab7fffb693107ca456"
+    "revision": "7f867ea92a5a1b21f4bb23e023671332"
   },
   {
     "url": "manifest.webmanifest",
@@ -69,12 +65,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/gatsby-starter-hyperspace`), ``)
+  pathname = pathname.replace(new RegExp(`^`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/gatsby-starter-hyperspace/app-9f2dfa616fdb1343d384.js`))) {
+  if (!resources || !(await caches.match(`/app-9a135864a8bf23328c35.js`))) {
     return await fetch(event.request)
   }
 
@@ -87,7 +83,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/gatsby-starter-hyperspace/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
